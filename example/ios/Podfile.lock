@@ -1,0 +1,108 @@
+PODS:
+  - AEXML (4.6.0)
+  - EpubViewerKit (0.1.3):
+    - AEXML (= 4.6.0)
+    - FontBlaster (= 5.1.1)
+    - MenuItemKit (= 4.0.1)
+    - RealmSwift (= 5.5.1)
+    - SSZipArchive (= 2.2.3)
+    - ZFDragableModalTransition (= 0.6)
+  - Flutter (1.0.0)
+  - flutter_inappwebview_ios (0.0.1):
+    - Flutter
+    - flutter_inappwebview_ios/Core (= 0.0.1)
+    - OrderedSet (~> 6.0.3)
+  - flutter_inappwebview_ios/Core (0.0.1):
+    - Flutter
+    - OrderedSet (~> 6.0.3)
+  - fluttertoast (0.0.2):
+    - Flutter
+    - Toast
+  - FontBlaster (5.1.1)
+  - isar_flutter_libs (1.0.0):
+    - Flutter
+  - MenuItemKit (4.0.1)
+  - OrderedSet (6.0.3)
+  - path_provider_foundation (0.0.1):
+    - Flutter
+    - FlutterMacOS
+  - permission_handler_apple (9.3.0):
+    - Flutter
+  - Realm (5.5.1):
+    - Realm/Headers (= 5.5.1)
+  - Realm/Headers (5.5.1)
+  - RealmSwift (5.5.1):
+    - Realm (= 5.5.1)
+  - screen_brightness_ios (0.1.0):
+    - Flutter
+  - SSZipArchive (2.2.3)
+  - Toast (4.1.1)
+  - vocsy_epub_viewer (2.0.0):
+    - EpubViewerKit (~> 0.1.3)
+    - Flutter
+  - ZFDragableModalTransition (0.6)
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - flutter_inappwebview_ios (from `.symlinks/plugins/flutter_inappwebview_ios/ios`)
+  - fluttertoast (from `.symlinks/plugins/fluttertoast/ios`)
+  - isar_flutter_libs (from `.symlinks/plugins/isar_flutter_libs/ios`)
+  - path_provider_foundation (from `.symlinks/plugins/path_provider_foundation/darwin`)
+  - permission_handler_apple (from `.symlinks/plugins/permission_handler_apple/ios`)
+  - screen_brightness_ios (from `.symlinks/plugins/screen_brightness_ios/ios`)
+  - vocsy_epub_viewer (from `.symlinks/plugins/vocsy_epub_viewer/ios`)
+
+SPEC REPOS:
+  trunk:
+    - AEXML
+    - EpubViewerKit
+    - FontBlaster
+    - MenuItemKit
+    - OrderedSet
+    - Realm
+    - RealmSwift
+    - SSZipArchive
+    - Toast
+    - ZFDragableModalTransition
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  flutter_inappwebview_ios:
+    :path: ".symlinks/plugins/flutter_inappwebview_ios/ios"
+  fluttertoast:
+    :path: ".symlinks/plugins/fluttertoast/ios"
+  isar_flutter_libs:
+    :path: ".symlinks/plugins/isar_flutter_libs/ios"
+  path_provider_foundation:
+    :path: ".symlinks/plugins/path_provider_foundation/darwin"
+  permission_handler_apple:
+    :path: ".symlinks/plugins/permission_handler_apple/ios"
+  screen_brightness_ios:
+    :path: ".symlinks/plugins/screen_brightness_ios/ios"
+  vocsy_epub_viewer:
+    :path: ".symlinks/plugins/vocsy_epub_viewer/ios"
+
+SPEC CHECKSUMS:
+  AEXML: 2fbb73d8724797ed2cde888731e176fa4d44dd83
+  EpubViewerKit: 5f6c8ff9161bba18d6742c59b3c575c19f0623a9
+  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  flutter_inappwebview_ios: 6f63631e2c62a7c350263b13fa5427aedefe81d4
+  fluttertoast: e9a18c7be5413da53898f660530c56f35edfba9c
+  FontBlaster: 8897ebdbb4b6ace3ab78c92b665d88c954f19e4a
+  isar_flutter_libs: b69f437aeab9c521821c3f376198c4371fa21073
+  MenuItemKit: 1459920e984d823e1bcc858b7a964f94e6bfa0f6
+  OrderedSet: e539b66b644ff081c73a262d24ad552a69be3a94
+  path_provider_foundation: 2b6b4c569c0fb62ec74538f866245ac84301af46
+  permission_handler_apple: 9878588469a2b0d0fc1e048d9f43605f92e6cec2
+  Realm: c2ffe0667f9c98c9ba65f608ba85684d39826145
+  RealmSwift: 5a35c1c35c3e1925e6fcd092c881d5cc4a826bff
+  screen_brightness_ios: 7437207a2a9bc56553aa10f782afecf830b4c4e2
+  SSZipArchive: 62d4947b08730e4cda640473b0066d209ff033c9
+  Toast: 1f5ea13423a1e6674c4abdac5be53587ae481c4e
+  vocsy_epub_viewer: 2dce338f2e0ca766f2db27525977456b10fc0612
+  ZFDragableModalTransition: 0d294eaaba6edfcb9839595de765f9ca06a4b524
+
+PODFILE CHECKSUM: 819463e6a0290f5a72f145ba7cde16e8b6ef0796
+
+COCOAPODS: 1.15.2
