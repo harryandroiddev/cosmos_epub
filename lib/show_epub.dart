@@ -28,7 +28,7 @@ late BookProgressSingleton bookProgress;
 const double DESIGN_WIDTH = 375;
 const double DESIGN_HEIGHT = 812;
 
-String selectedFont = 'Segoe';
+String selectedFont = 'Anmol';
 List<String> fontNames = [
   "Segoe",
   "Alegreya",
@@ -283,21 +283,20 @@ class ShowEpubState extends State<ShowEpub> {
         clipBehavior: Clip.antiAlias,
         backgroundColor: backColor,
         enableDrag: true,
-        shape: RoundedRectangleBorder(
+        shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.only(
-                topLeft: Radius.circular(20.r),
-                topRight: Radius.circular(20.r))),
+                topLeft: Radius.circular(20), topRight: Radius.circular(20))),
         builder: (context) {
           return SingleChildScrollView(
               child: StatefulBuilder(
                   builder: (BuildContext context, setState) => SizedBox(
-                        height: 170.h,
+                        height: 200,
                         child: Column(
                           children: [
                             Container(
                               margin: EdgeInsets.symmetric(
-                                  horizontal: 10.h, vertical: 8.w),
-                              height: 45.h,
+                                  horizontal: 10, vertical: 8),
+                              height: 45,
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -380,73 +379,73 @@ class ShowEpubState extends State<ShowEpub> {
                             ),
                             Expanded(
                               child: Container(
-                                  padding:
-                                      EdgeInsets.symmetric(horizontal: 20.h),
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 10),
                                   child: Column(
                                     children: [
-                                      StatefulBuilder(
-                                        builder: (BuildContext context,
-                                                StateSetter setState) =>
-                                            Theme(
-                                          data: Theme.of(context)
-                                              .copyWith(canvasColor: backColor),
-                                          child: DropdownButtonHideUnderline(
-                                            child: DropdownButton<String>(
-                                                value: selectedFont,
-                                                isExpanded: true,
-                                                menuMaxHeight: 400.h,
-                                                onChanged: (newValue) {
-                                                  selectedFont =
-                                                      newValue ?? 'Segoe';
+                                      // StatefulBuilder(
+                                      //   builder: (BuildContext context,
+                                      //           StateSetter setState) =>
+                                      //       Theme(
+                                      //     data: Theme.of(context)
+                                      //         .copyWith(canvasColor: backColor),
+                                      //     child: DropdownButtonHideUnderline(
+                                      //       child: DropdownButton<String>(
+                                      //           value: selectedFont,
+                                      //           isExpanded: true,
+                                      //           menuMaxHeight: 400.h,
+                                      //           onChanged: (newValue) {
+                                      //             selectedFont =
+                                      //                 newValue ?? 'Segoe';
 
-                                                  selectedTextStyle = fontNames
-                                                      .where((element) =>
-                                                          element ==
-                                                          selectedFont)
-                                                      .first;
+                                      //             selectedTextStyle = fontNames
+                                      //                 .where((element) =>
+                                      //                     element ==
+                                      //                     selectedFont)
+                                      //                 .first;
 
-                                                  gs.write(
-                                                      libFont, selectedFont);
+                                      //             gs.write(
+                                      //                 libFont, selectedFont);
 
-                                                  ///For updating inside
-                                                  setState(() {});
-                                                  controllerPaging.paginate();
-                                                  updateUI();
-                                                },
-                                                items: fontNames.map<
-                                                    DropdownMenuItem<
-                                                        String>>((String font) {
-                                                  return DropdownMenuItem<
-                                                      String>(
-                                                    value: font,
-                                                    child: Text(
-                                                      font,
-                                                      style: TextStyle(
-                                                          color: selectedFont ==
-                                                                  font
-                                                              ? widget
-                                                                  .accentColor
-                                                              : fontColor,
-                                                          package:
-                                                              'cosmos_epub',
-                                                          fontSize:
-                                                              context.isTablet
-                                                                  ? 10.sp
-                                                                  : 15.sp,
-                                                          fontWeight:
-                                                              selectedFont ==
-                                                                      font
-                                                                  ? FontWeight
-                                                                      .bold
-                                                                  : FontWeight
-                                                                      .normal,
-                                                          fontFamily: font),
-                                                    ),
-                                                  );
-                                                }).toList()),
-                                          ),
-                                        ),
-                                      ),
+                                      //             ///For updating inside
+                                      //             setState(() {});
+                                      //             controllerPaging.paginate();
+                                      //             updateUI();
+                                      //           },
+                                      //           items: fontNames.map<
+                                      //               DropdownMenuItem<
+                                      //                   String>>((String font) {
+                                      //             return DropdownMenuItem<
+                                      //                 String>(
+                                      //               value: font,
+                                      //               child: Text(
+                                      //                 font,
+                                      //                 style: TextStyle(
+                                      //                     color: selectedFont ==
+                                      //                             font
+                                      //                         ? widget
+                                      //                             .accentColor
+                                      //                         : fontColor,
+                                      //                     package:
+                                      //                         'cosmos_epub',
+                                      //                     fontSize:
+                                      //                         context.isTablet
+                                      //                             ? 10.sp
+                                      //                             : 15.sp,
+                                      //                     fontWeight:
+                                      //                         selectedFont ==
+                                      //                                 font
+                                      //                             ? FontWeight
+                                      //                                 .bold
+                                      //                             : FontWeight
+                                      //                                 .normal,
+                                      //                     fontFamily: font),
+                                      //               ),
+                                      //             );
+                                      //           }).toList()),
+                                      //     ),
+                                      //   ),
+                                      // ),
                                       Row(
                                         children: [
                                           Text(
